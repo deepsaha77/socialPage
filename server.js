@@ -22,10 +22,10 @@ app.get("/", (req, res) => {
 
 app.post("/login", async (req, res) => {
 
-    const { username, password } = req.body;
+    const { email, password } = req.body;
 
     const user = new User({
-        username,
+        email,
         password
     });
 
